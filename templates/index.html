@@ -1,0 +1,214 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title></title>
+</head>
+
+<style type="text/css" >
+
+*{
+  margin: 0;
+  padding: 0;
+  outline: none;
+  box-sizing: border-box;
+  font-family: 'Raleway', sans-serif;
+}
+
+body{ background: #3598dc; }
+
+.cont{
+  position: relative;
+  width: 25%;
+  height: 600px;
+  padding: 10px 25px;
+  margin: 10vh auto;
+  background: #fff;
+  border-radius: 8px;
+}
+
+.form{ width: 100%; height: 600px; }
+
+h1, h2, .user, .pass{
+  text-align: center;
+  display: block;
+}
+
+h1{
+  color: #606060;
+  font-weight: bold;
+  font-size: 40px;
+  margin: 30px auto;
+}
+
+.user, .pass, .login{
+  width: 100%;
+  height: 45px;
+  border: none;
+  border-radius: 5px;
+  font-size: 20px;
+  font-weight: lighter;
+  margin-bottom: 30px;
+}
+
+.user, .pass{ background: #ecf0f1; }
+
+.login{
+  color: #fff;
+  cursor: pointer;
+  margin-top: 10%;
+  background: #3598dc;
+  transition: background 0.4s ease;
+}
+
+.login:hover{ background: #3570dc; }
+
+@media only screen and (min-width : 280px) {
+  .cont{ width: 90% }
+}
+
+@media only screen and (min-width : 480px) {
+  .cont{ width: 70% }
+}
+
+@media only screen and (min-width : 768px) {
+  .cont{ width: 50% }
+}
+
+@media only screen and (min-width : 992px) {
+  .cont{ width: 30% }
+}
+
+h2{ color: #fff; margin-top: 25px; }
+
+
+
+    /*     Checkbox CSS   */
+
+
+    /* Customize the label (the container) */
+
+
+.container {
+  display: block;
+  position: relative;
+  padding-left: 35px;
+  margin-bottom: 12px;
+  cursor: pointer;
+  font-size: 22px;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+}
+
+/* Hide the browser's default checkbox */
+.container input {
+  position: absolute;
+  opacity: 0;
+  cursor: pointer;
+}
+
+/* Create a custom checkbox */
+.checkmark {
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 25px;
+  width: 25px;
+  background-color: #eee;
+}
+
+/* On mouse-over, add a grey background color */
+.container:hover input ~ .checkmark {
+  background-color: #ccc;
+}
+
+/* When the checkbox is checked, add a blue background */
+.container input:checked ~ .checkmark {
+  background-color: #2196F3;
+}
+
+/* Create the checkmark/indicator (hidden when not checked) */
+.checkmark:after {
+  content: "";
+  position: absolute;
+  display: none;
+}
+
+/* Show the checkmark when checked */
+.container input:checked ~ .checkmark:after {
+  display: block;
+}
+
+/* Style the checkmark/indicator */
+.container .checkmark:after {
+  left: 9px;
+  top: 5px;
+  width: 5px;
+  height: 10px;
+  border: solid white;
+  border-width: 0 3px 3px 0;
+  -webkit-transform: rotate(45deg);
+  -ms-transform: rotate(45deg);
+  transform: rotate(45deg);
+}
+.checkbox{
+    font-family: "Open Sans", Arial, Helvetica, Sans-Serif;
+    color: #cccccc;
+}
+.checkbox font{
+    font-family: "Open Sans", Arial, Helvetica, Sans-Serif;
+    color: #cccccc;
+    padding: 2px;
+}
+
+
+</style>
+
+<body>
+
+<h2> Please Login to Continue </h2>
+
+<div class="cont">
+
+  <div class="form">
+    <form  method="post">
+      <h1></h1>
+      <input type="text" name="username" class="user" placeholder="Username"/>
+        <input type="text" name="what_did_u_buy" class="user" placeholder="What did u buy">
+        <input type="text" name="price" class="user" placeholder="Price">
+        <label class="container">Abhishek
+  <input type="checkbox" name="abhishek_input">
+  <span class="checkmark"></span>
+</label>
+        <label class="container">Gajendra
+  <input type="checkbox" name="gajendra_input">
+  <span class="checkmark"></span>
+</label>
+        <label class="container">Shubham
+  <input type="checkbox" name="shubham">
+  <span class="checkmark"></span>
+</label>
+        <label class="container">Gaurav
+  <input type="checkbox" name="gajendra">
+  <span class="checkmark"></span>
+</label>
+        <label class="container">Amit
+  <input type="checkbox" name="amit">
+  <span class="checkmark"></span>
+</label>
+        <label class="container">Select all
+  <input type="checkbox" checked="checked" name="select_all">
+  <span class="checkmark"></span>
+</label>
+
+      <button type="submit" class="login">Login</button>
+    </form>
+  </div>
+
+  <h2> Just made an app for making bill splitting easier </h2>
+
+</div>
+</body>
+</html>
